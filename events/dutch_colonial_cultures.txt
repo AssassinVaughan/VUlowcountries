@@ -1,0 +1,113 @@
+namespace = dutchcolonial
+
+province_event = {
+	id = dutchcolonial.1
+	title = "dutchcolonialsurinamername1"
+	desc = "dutchcolonialsurinamerdesc1"
+	picture = STREET_SPEECH_eventPicture
+	trigger = {
+        colonial_region = colonial_colombia
+		NOT = {culture = surinamer}
+        owner = {
+            culture_group = low_franconian
+		}
+	}
+	
+	immediate = {
+        change_culture = surinamer
+	}
+
+	mean_time_to_happen = {
+		days = 100
+	}
+
+	option = {
+		name = "dutchcolonialsurinameroption1"
+	}
+}
+
+province_event = {
+	id = dutchcolonial.2
+	title = "dutchcolonialjerseyduchname1"
+	desc = "dutchcolonialjerseyduchdesc1"
+	picture = COLONIZATION_eventPicture
+	fire_only_once = yes
+	trigger = {
+        colonial_region = colonial_eastern_america
+		NOT = {
+            culture = jersey_dutch
+        }
+        owner = {
+            culture_group = low_franconian
+		}
+	}
+	
+	immediate = {
+        change_culture = jersey_dutch
+	}
+
+	mean_time_to_happen = {
+		days = 100
+	}
+
+	option = {
+		name = "dutchcolonialjerseyduchoption1"
+	}
+}
+province_event = {
+	id = dutchcolonial.3
+	title = "dutchcolonialantillesname1"
+	desc = "dutchcolonialantillesdesc1"
+	picture = COLONIZATION_eventPicture
+	fire_only_once = yes
+	trigger = {
+        colonial_region = colonial_the_carribean
+		NOT = {
+            culture = antillianen
+        }
+        owner = {
+            culture_group = low_franconian
+		}
+	}
+	
+	immediate = {
+        change_culture = antillianen
+	}
+
+	mean_time_to_happen = {
+		days = 100
+	}
+
+	option = {
+		name = "dutchcolonialantillesoption1"
+	}
+}
+province_event = {
+	id = dutchcolonial.4
+	title = "dutchcolonialindonesianname1"
+	desc = "dutchcolonialindonesiandesc1"
+	picture = COLONIZATION_eventPicture
+	fire_only_once = yes
+	trigger = {
+        OR = {
+            continent = asia
+            continent = oceania
+        }
+        NOT = {
+            culture = indos
+        }
+        culture_group = low_franconian
+	}
+	
+	immediate = {
+        change_culture = indos
+	}
+
+	mean_time_to_happen = {
+		days = 100
+	}
+
+	option = {
+		name = "dutchcolonialindonesianoption1"
+	}
+}
